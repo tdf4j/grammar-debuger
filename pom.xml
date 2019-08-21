@@ -13,6 +13,24 @@
     <maven.compiler.target>1.9</maven.compiler.target>
   </properties>
 
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+          <archive>
+            <manifest>
+              <mainClass>org.tdf4j.debugger.Launcher</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
   <dependencies>
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
     <dependency>
