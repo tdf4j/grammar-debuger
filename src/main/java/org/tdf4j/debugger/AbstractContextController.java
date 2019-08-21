@@ -4,7 +4,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
-public abstract class AbController implements ApplicationContextAware {
+public abstract class AbstractContextController implements ApplicationContextAware {
 
     private ApplicationContext context;
 

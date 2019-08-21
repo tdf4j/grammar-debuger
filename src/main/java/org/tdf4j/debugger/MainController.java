@@ -5,7 +5,7 @@ import javafx.scene.control.Label;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MainController extends AbController {
+public class MainController extends AbstractContextController {
     @FXML private Label labwork;
 
     @FXML
