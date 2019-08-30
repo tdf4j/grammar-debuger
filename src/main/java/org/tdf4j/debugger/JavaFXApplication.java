@@ -6,13 +6,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 import java.io.IOException;
 
-public class Launcher extends javafx.application.Application {
+public class JavaFXApplication extends javafx.application.Application {
     private static ClassPathXmlApplicationContext context;
 
     public static void main(String[] args) {
        final ApplicationContext applicationContext = new GenericXmlApplicationContext("appcontext.xml");
        applicationContext.getBean(Application.class).run();
-        launch(args);
+       launch(args);
     }
 
     @Override
