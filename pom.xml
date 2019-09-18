@@ -24,7 +24,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>org.tdf4j.debugger.JavaFXLauncher</mainClass>
+              <mainClass>org.tdf4j.debugger.JavaFXApplication</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -37,7 +37,7 @@
         <executions>
           <execution>
             <id>copy-dependencies</id>
-            <phase>install</phase>
+            <phase>package</phase>
             <goals>
               <goal>copy-dependencies</goal>
             </goals>

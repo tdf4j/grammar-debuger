@@ -37,7 +37,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>org.tdf4j.debugger.JavaFXLauncher</mainClass>
+                  <mainClass>org.tdf4j.debugger.JavaFXApplication</mainClass>
                 </transformer>
               </transformers>
             </configuration>

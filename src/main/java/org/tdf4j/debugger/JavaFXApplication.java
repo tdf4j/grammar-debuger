@@ -1,32 +1,31 @@
 package org.tdf4j.debugger;
 
 import javafx.stage.Stage;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-import java.io.IOException;
+import org.tdf4j.debugger.service.Application;
 
 public class JavaFXApplication extends javafx.application.Application {
-    private static ClassPathXmlApplicationContext context;
+
+    private Application application;
 
     public static void main(String[] args) {
-       final ApplicationContext applicationContext = new GenericXmlApplicationContext("appcontext.xml");
-       applicationContext.getBean(Application.class).run();
-       launch(args);
+        launch(args);
     }
 
     @Override
     public void init() {
-        context = new ClassPathXmlApplicationContext("appcontext.xml");
+        this.application = new GenericXmlApplicationContext("appcontext.xml")
+                .getBean(Application.class);
     }
 
     @Override
-    public void start(Stage stage) throws IOException {
-        SpringStageLoader.loadMain().show();
+    public void start(final Stage stage) {
+        application.start(stage);
     }
 
     @Override
-    public void stop() throws IOException {
-        context.close();
+    public void stop() {
+        application.stop();
     }
+
 }

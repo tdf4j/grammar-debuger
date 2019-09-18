@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tdf4j.debugger.MainController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tdf4j.debugger.controller.MainController">
    <children>
       <Button fx:id="test" alignment="CENTER" layoutX="246.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#onClickLoad" prefHeight="36.0" prefWidth="109.0" text="Test" textAlignment="CENTER" />
       <Label id="labwork" fx:id="labwork" alignment="CENTER" layoutX="252.0" layoutY="85.0" prefHeight="17.0" prefWidth="97.0" text="Works?" textAlignment="CENTER" />
