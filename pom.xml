@@ -24,7 +24,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>org.tdf4j.debugger.JavaFXApplication</mainClass>
+              <mainClass>org.tdf4j.debugger.JavaFXLauncher</mainClass>
             </manifest>
           </archive>
         </configuration>

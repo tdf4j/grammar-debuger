@@ -7,7 +7,12 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tdf4j.debugger.controller.MainController">
    <children>
-      <Button fx:id="test" alignment="CENTER" layoutX="246.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#onClickLoad" prefHeight="36.0" prefWidth="109.0" text="Test" textAlignment="CENTER" />
-      <Label id="labwork" fx:id="labwork" alignment="CENTER" layoutX="252.0" layoutY="85.0" prefHeight="17.0" prefWidth="97.0" text="Works?" textAlignment="CENTER" />
+      <Button id="pushme" alignment="CENTER" layoutX="450.0" layoutY="334.0" mnemonicParsing="false" onMouseClicked="#onClickLoad" prefHeight="36.0" prefWidth="109.0" text="Push me" textAlignment="CENTER" />
+      <Label id="Grammarlabel" alignment="CENTER" layoutX="14.0" layoutY="72.0" prefHeight="17.0" prefWidth="97.0" text="Grammar" textAlignment="CENTER" />
+      <TextArea id="Grammartextarea" fx:id="Grammartextarea" layoutX="29.0" layoutY="100.0" prefHeight="200.0" prefWidth="164.0" promptText="Write grammar I guess (?)" />
+      <TextArea id="Textareatext" fx:id="Textareatext" layoutX="211.0" layoutY="100.0" prefHeight="200.0" prefWidth="164.0" promptText="There should be something" />
+      <TextArea id="Consoletextarea" fx:id="Consoletextarea" layoutX="395.0" layoutY="100.0" prefHeight="200.0" prefWidth="164.0" promptText="Console output" />
+      <Label id="Textlabel" layoutX="211.0" layoutY="72.0" text="Text" />
+      <Label id="Consolelabel" layoutX="395.0" layoutY="72.0" text="Console" />
    </children>
 </AnchorPane>
